@@ -1,3 +1,8 @@
+---
+layout: default
+title: Support — Tip Sheet 2
+---
+
 # Tip Sheet 2 — Support
 
 Thanks for using Tip Sheet 2! If you need help, have a question, or want to share feedback, we're happy to hear from you.

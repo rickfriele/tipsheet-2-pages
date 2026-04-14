@@ -1,3 +1,8 @@
+---
+layout: default
+title: Privacy Policy — Tip Sheet 2
+---
+
 # Privacy Policy for Tip Sheet 2
 
 _Last updated: April 13, 2026_
