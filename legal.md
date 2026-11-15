@@ -25,11 +25,7 @@ Location data is processed strictly on-device and is never transmitted off your 
 
 ## Analytics
 
-Tip Sheet 2 uses Firebase Analytics (provided by Google) to understand how the app is used in aggregate and to improve the product. The analytics data collected is limited to anonymous usage events such as:
-
-- Which screens are viewed and how long they are viewed
-- Onboarding progression and feature usage (e.g., creating jobs/shifts, configuring rules, exporting a CSV, importing a Tip Sheet v1 backup, viewing reports, configuring shift reminders, and review prompt milestones)
-- General app lifecycle events (app sessions)
+Tip Sheet 2 uses Firebase Analytics (provided by Google) to understand how the app is used in aggregate and to improve the product. The analytics data collected is limited to general, anonymous usage and app lifecycle information (such as screen views, feature interactions, and session activity).
 
 **We never send any of the following to analytics:**
 - Monetary values (tips, wages, sales, earnings)
@@ -40,17 +36,13 @@ Tip Sheet 2 uses Firebase Analytics (provided by Google) to understand how the a
 
 Analytics data is associated only with an anonymous app-instance identifier managed by Firebase and is not linked to your identity or used for tracking across other apps or websites.
 
-## In-App Purchases &amp; StoreKit 2 Revenue Tracking
+## In-App Purchases
 
-Tip Sheet 2 offers a one-time, non-consumable in-app purchase ("Tip Sheet 2 Pro") processed by Apple. The developer does not receive or store your payment information; purchase validation is handled entirely through Apple's StoreKit 2.
-
-When you complete a new purchase of Tip Sheet 2 Pro, anonymous StoreKit 2 transaction metadata is logged via Firebase Analytics (`Analytics.logTransaction`) to measure purchase conversions and app revenue in aggregate. No personal payment details or Apple ID information are collected.
+Tip Sheet 2 offers a one-time, non-consumable in-app purchase ("Tip Sheet 2 Pro") processed by Apple. The developer does not receive or store your payment information; purchase validation is handled through Apple's StoreKit. Anonymous purchase events may be recorded in aggregate to understand app performance, without collecting personal payment details or Apple ID information.
 
 ## Crash &amp; Diagnostic Data
 
-Tip Sheet 2 uses Apple's **MetricKit** framework on-device to capture recent crash and hang diagnostics locally. This diagnostic data is stored only on your device and is **never** sent automatically.
-
-If you choose **Settings → Contact Support** and select **Attach Report**, the app attaches a non-financial diagnostic report (app version, iOS version, iCloud sync status, and the most recent on-device MetricKit diagnostic payload) to your support email draft to help troubleshoot issues. You can choose **Don't Attach** at any time.
+Tip Sheet 2 records basic crash and performance diagnostics locally on your device. This data is never sent automatically. If you choose **Settings → Contact Support** and select **Attach Report**, a non-financial diagnostic summary is attached to your support email draft to help troubleshoot issues; you can choose **Don't Attach** at any time.
 
 ## Third-Party Services
 
